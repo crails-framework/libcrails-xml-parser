@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libcrails-xml-parser/
+}
+
+export $out_root/libcrails-xml-parser/$import.target
