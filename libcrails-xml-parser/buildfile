@@ -26,6 +26,6 @@ else
 
 {hxx ixx txx}{*}:
 {
-  install         = include/crails/request_parsers
+  install         = include/crails/request_parsers/
   install.subdirs = true
 }
