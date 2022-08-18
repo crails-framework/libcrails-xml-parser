@@ -8,9 +8,9 @@ namespace Crails
   class RequestXmlParser : public BodyParser
   {
   public:
-   void operator()(Connection&, BuildingResponse&, Params&, std::function<void(RequestParser::Status)>) const override;
+   void operator()(Context&, std::function<void(RequestParser::Status)>) const override;
   private:
-    void body_received(Connection&, BuildingResponse&, Params&, const std::string& body) const override;
+    void body_received(Context&, const std::string& body) const override;
   };
 }
 
